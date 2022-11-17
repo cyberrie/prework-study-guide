@@ -18,27 +18,82 @@
     </header>
     <main>
       <section class="card" id="html-section">
-        <h2>HTML</h2>
+        <h2>HTML = Hyper Text Markup Language</h2>
         <ul>
           <li>HTML = content</li>
-          <li>The head element contains information about the webpage.</li>
+          <li>HTML skeleton shortcut ! + tab in VS cde</li>
+          <li><strong> 🐨 HTML skeleton explained:</strong></li>
+          <ol>
+            <li>
+              !DOCTYPE must be present and informs that this is an HTML document
+            </li>
+            <li>
+              html start and html end tag define the start of an html document
+            </li>
+            <li>language has to be specified in the opening html tag</li>
+            <li>
+              head element is the susbequent, and it contains all the
+              infromation for the browser which are not visible to users
+            </li>
+            <li>meta charset tag defines the character set</li>
+            <li>title and also any links to for eg stylesheet and others</li>
+          </ol>
           <li>
-            The body element represents the visible content shown to the user.
+            Head is followed by the body element, which represents the visible
+            content shown to the user.
+          </li>
+          <li>
+            Body can contain main section which can furtehr contain header,
+            navigation, sections, articles etc etc... (checkout MDN on these if
+            you get stuck)
+          </li>
+          <li>
+            It is good prctice to use HTML semantic elements rather than
+            'neutral' ones such as div and span. Semantic elements enable better
+            accessiblity for both users and developers (SEO for eg...)
+          </li>
+          <li>
+            Elements can have id or class which is then useful for styling them.
+            Essentially id is a more specific element than a class and will
+            always take precedence. We can add more classes to an element if we
+            want to be specific on some styling parts
+          </li>
+          <li>KEEP IT SIMPLE AS POSSIBLE</li>
+          <li>
+            I could write a lot here but might be too much - just refer to MDN,
+            StackOverflow and internal resources
+          </li>
+          <li>
+            P.S. Try not to get into bad habits of making everything a div 😇 
           </li>
         </ul>
       </section>
 
       <section class="card" id="css-section">
-        <h2>CSS</h2>
+        <h2>CSS = Cascading Style Sheets</h2>
         <ul>
           <li>CSS = style</li>
           <li>
+            Plenty of information here and I will not write it all here,
+            hopefully this will be ok for the purpose of this assignment 👀
+          </li>
+          <li>
+            Make sure to link the stylesheet in the head of the html before
+            starting, check the connection with a live server
+          </li>
+          <li>
+            use id, class or just semantic selectors to style the html document
+          </li>
+          <li>
+            CSS box model: check out internal resources and MDN if you get stuck
+          </li>
+          <li>
             A margin indicates how much space we want around the outside of an
-            element.
+            element
           </li>
           <li>
             A padding indicates how much space we want around the content inside
-            an element.
+            an element
           </li>
         </ul>
       </section>
@@ -50,12 +105,47 @@
             Terminal: cd = change directory, cd - = previous working directory,
             cd .. = return to starting directory, mkdir = create a new
             directory, pwd = print working directory, touch file-name = create a
-            new file, code . = open VS code, git status = current branch
+            new file, code . = open VS code, git status = current branch, git
+            restore = restore code to the last saved point, git clean -xdf =
+            return to the initial code
           </li>
-          <li>CREATE A NEW BRANCH: git checkout -b feature/branch-name</li>
-          <li>ADD ALL CHANGES: git add -A</li>
+          <li><strong>💡 Create a local repo and clone it to git:</strong></li>
+          <ol>
+            <li>mkdir the folder in terminal</li>
+            <li>cd into the above mentioned folder</li>
+            <li>code . to open VS code</li>
+            <li>create README.md</li>
+            <li>go to Github and create a repo with the name only</li>
+            <li>copy the first shown code into the terminal and hit enter</li>
+            <li>
+              there you go! now just make sure to add, commit and push changes
+            </li>
+          </ol>
           <li>
-            COMMIT: git commit -m "write notes here, i.e. change/update.."
+            <strong>💡 Create a github repo and clone it locally:</strong>
+          </li>
+          <ol>
+            <li>
+              create github repo + readme.md and/or license but not needed for
+              the purpose of this course, for now anyway
+            </li>
+            <li>mkdir folder on a local machine using terminal</li>
+            <li>cd into above mentioned folder</li>
+            <li>
+              git clone and copy SSH code into the terminal from github and hit
+              eneter
+            </li>
+            <li>DONE! do not forget to add, commit and push</li>
+          </ol>
+          <li>Check out Git cheat sheet in case you get stuck with these</li>
+          <li>
+            When working with branches on a team project. CREATE A NEW BRANCH:
+            git checkout -b feature/branch-name
+          </li>
+          <li>subsequently add, commit and push</li>
+          <li>
+            when pushing ensure to specify the branch, i.e. git push
+            feature/index.html
           </li>
           <li>
             ENSURE NEW BRANCH IN SYNC WITH BASE BRANCH git pull origin main
@@ -69,9 +159,13 @@
       </section>
 
       <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
+        <h2>🌕 JavaScript</h2>
         <ul>
           <li>JS = functionality</li>
+          <li>
+            GOOD LUCK to me with this. I will write notes as we go through the
+            course, but below are some principles from pre-work
+          </li>
           <li>
             A variable is a named container that allows us to store data in our
             code.
